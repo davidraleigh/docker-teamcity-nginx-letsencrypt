@@ -23,7 +23,6 @@ services:
       - "/etc/nginx/vhost.d"
       - "/usr/share/nginx/html"
       - "/var/run/docker.sock:/tmp/docker.sock:ro"
-      - "./conf.d/teamcity.conf:/etc/nginx/conf.d/teamcity.conf:ro"
       - "${TEAMCITY_DIR}/certs:/etc/nginx/certs:ro"
 
   letsencrypt-nginx-proxy-companion:
