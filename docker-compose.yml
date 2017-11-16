@@ -32,3 +32,5 @@ services:
       - "${TEAMCITY_DIR}/certs:/etc/nginx/certs:rw"
     volumes_from:
       - "nginx-proxy"
+    environment:
+      ACME_TOS_HASH: ${ACME_TOS_HASH}
